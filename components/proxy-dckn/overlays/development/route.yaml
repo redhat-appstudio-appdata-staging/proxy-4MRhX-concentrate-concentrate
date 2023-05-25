@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: proxy-dckn
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: proxy-dckn
+    app.kubernetes.io/part-of: proxy
+  name: proxy-dckn
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: proxy-dckn
+    weight: 100
+status: {}
