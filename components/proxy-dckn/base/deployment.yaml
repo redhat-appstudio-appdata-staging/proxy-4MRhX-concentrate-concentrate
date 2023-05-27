@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: proxy-dckn
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads-stage/rh-ee-abarbaro-tenant/proxy/proxy-dckn@sha256:b305403e4b33ae50a33e6ebade1484dc574cfff718638c88ef54be340e644b30
         imagePullPolicy: Always
         name: container-image
         ports:
