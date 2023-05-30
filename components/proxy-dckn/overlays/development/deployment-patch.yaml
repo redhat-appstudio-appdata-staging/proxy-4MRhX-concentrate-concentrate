@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads-stage/rh-ee-abarbaro-tenant/proxy/proxy-dckn@sha256:eb282c3c42edbf8a1be9339a2168bb601bb06110cfcee9bedc4de5bfe69bacd6
+      - image: quay.io/redhat-user-workloads-stage/rh-ee-abarbaro-tenant/proxy/proxy-dckn@sha256:b305403e4b33ae50a33e6ebade1484dc574cfff718638c88ef54be340e644b30
         name: container-image
         resources: {}
 status: {}
